@@ -6,9 +6,9 @@ This is an Event Locator program I built for Viagogo. <br />
 Instructions to run code:
 1. Download the runnable jar file Event_Locator.jar from the folder.
 2. Open terminal/Command Line and switch directory to the one containing Event_Locator.jar
-3. type "java -jar Event_Locator.jar" into the command line and run program.
+3. type "java -jar EventLocator.jar" into the command line and run program.
 
-Assumptions:
+Assumptions: 
 1. Each coordinate holds only one event.
 2. Each event has a unique numeric identifier.
 3. Each event has 0 or more tickets.
@@ -18,14 +18,14 @@ Assumptions:
 7. We can only pre-process the Manhattan Distance i.e the seed data has to be generated first and only then can we take a coordinate input from the user.
 8. In case of event clashes (same manhattan distance), the event with the cheapest tickets are preferred. The events with no tickets are given last preference.
 
-Scalability questions:
-1. If we had to support multiple events in one location, we could get rid of the boolean flag array, and not check if a coordinate is occupied when we randomly generate events. 
-2. This would in fact reduce the memory allocation for a much larger world size and in case of clashes, the compareTo method would still work and sort the events based on Cheapest Tickets.
-3. We could reduce space and time complexities that come with the larger world size by using more efficient data structures -> trees, graphs, hash tables.
+Scalability questions: <br /> <br />
+-> If we had to support multiple events in one location, we could get rid of the boolean flag array, and not check if a coordinate is occupied when we randomly generate events.  <br />
+-> This would in fact reduce the memory allocation for a much larger world size and in case of clashes, the compareTo method would still work and sort the events based on Cheapest Tickets. <br />
+-> We could reduce space and time complexities that come with the larger world size by using more efficient data structures -> trees, graphs, hash tables. <br />
 
-Possible Improvements:
-1. If we post-process the world i.e take coordinate input and then seed data, we could reduce runtime by combining the Manhattan distance calculation with event generation and use a knockout array to keep the nearest K events.
-2. If we have to pre-process, we could possibly calculate a relative distance from (0,0) and use an algorithm that calculates the maximum probability range of the nearest events so we don't have to go through all the events.
+Possible Improvements: <br /> <br />
+-> If we post-process the world i.e take coordinate input and then seed data, we could reduce runtime by combining the Manhattan distance calculation with event generation and use a knockout array to keep the nearest K events. <br />
+-> If we have to pre-process, we could possibly calculate a relative distance from (0,0) and use an algorithm that calculates the maximum probability range of the nearest events so we don't have to go through all the events. <br />
 
 Example program run: <br />
 <br />
