@@ -26,6 +26,7 @@ Scalability questions: <br />
 Possible Improvements: <br /> 
 -> If we post-process the world i.e take coordinate input and then seed data, we could reduce runtime by combining the Manhattan distance calculation with event generation and use a knockout array to keep the nearest K events. <br />
 -> If we have to pre-process, we could possibly calculate a relative distance from (0,0) and use an algorithm that calculates the maximum probability range of the nearest events so we don't have to go through all the events. <br />
+-> I could create more robust test cases that cover more edge cases.
 
 Example program run: <br />
 <br />
