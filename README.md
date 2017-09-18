@@ -4,8 +4,8 @@ This is an Event Locator program I built for Viagogo. <br />
 -> It randomly generates seed data (events and tickets for the events) and then locates the k (k=5 here) nearest events from a user-entered coordinate. <br />
 
 Instructions to run code:
-1. Download the runnable jar file Event_Locator.jar from the folder.
-2. Open terminal/Command Line and switch directory to the one containing Event_Locator.jar
+1. Download the runnable jar file EventLocator.jar from the folder.
+2. Open terminal/Command Line and switch directory to the one containing EventLocator.jar
 3. type "java -jar EventLocator.jar" into the command line and run program.
 
 Assumptions: 
