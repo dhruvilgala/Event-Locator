@@ -18,12 +18,12 @@ Assumptions:
 7. We can only pre-process the Manhattan Distance i.e the seed data has to be generated first and only then can we take a coordinate input from the user.
 8. In case of event clashes (same manhattan distance), the event with the cheapest tickets are preferred. The events with no tickets are given last preference.
 
-Scalability questions: <br /> <br />
+Scalability questions: <br />
 -> If we had to support multiple events in one location, we could get rid of the boolean flag array, and not check if a coordinate is occupied when we randomly generate events.  <br />
 -> This would in fact reduce the memory allocation for a much larger world size and in case of clashes, the compareTo method would still work and sort the events based on Cheapest Tickets. <br />
 -> We could reduce space and time complexities that come with the larger world size by using more efficient data structures -> trees, graphs, hash tables. <br />
 
-Possible Improvements: <br /> <br />
+Possible Improvements: <br /> 
 -> If we post-process the world i.e take coordinate input and then seed data, we could reduce runtime by combining the Manhattan distance calculation with event generation and use a knockout array to keep the nearest K events. <br />
 -> If we have to pre-process, we could possibly calculate a relative distance from (0,0) and use an algorithm that calculates the maximum probability range of the nearest events so we don't have to go through all the events. <br />
 
